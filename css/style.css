@@ -1,3 +1,4 @@
+/* ---  Default --- */
 html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -9,13 +10,14 @@ html, body {
     margin: 0;
 }
 
+/* ---  NavBar  --- */
 .navbar {
     display: flex;
     padding: 10px;
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .brand {
@@ -54,12 +56,44 @@ html, body {
     font-size: 18px;
 }
 
-ul.topnav li.dropDownLink {
+.dropDownLink {
     display: none;
+}
+
+/* ---  Header  --- */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.header-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    width: 100%
+}
+
+.header-container h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 1.5rem;
 }
 
 /* ---  Mobile  --- */
 @media (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
 
     ul.topnav li a.nav-link {
         display: none;
