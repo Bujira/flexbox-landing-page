@@ -10,11 +10,16 @@ html, body {
 }
 
 .navbar {
-    background-image: url(/assets/navbar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 25px;
 }
 
 .brand, .nav-link {
@@ -46,4 +51,5 @@ html, body {
 .topnav .nav-link {
     text-decoration: none;
     padding-left: 20px;
+    font-size: 18px;
 }
