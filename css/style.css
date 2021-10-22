@@ -96,6 +96,7 @@ header {
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -105,19 +106,35 @@ header {
     display: flex;
 }
 
-.icon-wrapper {
+.icon-left, .icon-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.icon {
+.icon-left, .blurb-wrapper-left {
+    order: 1;
+}
+
+.icon-1 {
     width: 256px;
     height: 178px;
 }
 
-.blurb-wrapper {
+.icon-2 {
+    height: 178px;
+}
+
+.icon-3 {
+    height: 178px;
+}
+
+.blurb-wrapper-right, .blurb-wrapper-left {
     flex: 1;
+}
+
+.blurb-wrapper-right, .icon-right {
+    order: 2;
 }
 
 .blurb-header {
@@ -175,5 +192,14 @@ header {
         text-decoration: none;
         color: #303137;
         font-size: 1.5rem;
+    }
+
+    .media-object {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-object.middle {
+        flex-direction: column-reverse;
     }
 }
