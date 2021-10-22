@@ -91,7 +91,43 @@ header {
 /* ---  Services Section    --- */
 .services {
     background-color: rgb(255, 255, 150);
-    padding: 4rem 1rem;;
+    padding: 4rem 1rem;
+}
+
+.container {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.media-object {
+    display: flex;
+}
+
+.icon-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 256px;
+    height: 178px;
+}
+
+.blurb-wrapper {
+    flex: 1;
+}
+
+.blurb-header {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.blurb-info {
+    color: #666;
+    font-size: 18px;
 }
 
 /* ---  Mobile  --- */
