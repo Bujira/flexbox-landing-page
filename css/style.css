@@ -104,6 +104,8 @@ header {
 
 .media-object {
     display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
 }
 
 .icon-left, .icon-right {
@@ -119,14 +121,17 @@ header {
 .icon-1 {
     width: 256px;
     height: 178px;
+    padding: 1rem 0;
 }
 
 .icon-2 {
     height: 178px;
+    padding: 1rem 0;
 }
 
 .icon-3 {
     height: 178px;
+    padding: 1rem 0;
 }
 
 .blurb-wrapper-right, .blurb-wrapper-left {
