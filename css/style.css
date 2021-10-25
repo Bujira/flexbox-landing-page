@@ -90,8 +90,7 @@ header {
 
 /* ---  Services Section    --- */
 .services {
-    background-color: rgb(255, 255, 150);
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .container {
@@ -100,12 +99,21 @@ header {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+    background-color: rgb(255, 255, 100);
 }
 
 .media-object {
     display: flex;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, .3);
+}
+
+.media-object.middle {
+    margin: 0;
 }
 
 .icon-left, .icon-right {
@@ -150,6 +158,23 @@ header {
 .blurb-info {
     color: #666;
     font-size: 18px;
+}
+
+.quote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.quote-btn {
+    background-color: rgb(202, 202, 202);
+    color: #303137;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    padding: 0.8rem 4rem;
+    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, .3);
 }
 
 /* ---  Mobile  --- */
