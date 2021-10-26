@@ -15,7 +15,7 @@ html, body {
     display: flex;
     padding: 10px;
     max-width: 1140px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     justify-content: space-around;
 }
@@ -89,17 +89,17 @@ header {
 }
 
 /* ---  Services Section    --- */
-.services {
+.services, .contact {
     padding: 2rem 1rem;
+    background-color: rgb(255, 255, 100);
 }
 
-.container1 {
+.container {
     display: flex;
     flex-direction: column;
-    /* max-width: 1140px; */
+    max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(255, 255, 100);
 }
 
 .media-object {
@@ -174,12 +174,11 @@ header {
     border-radius: 3px;
     border: none;
     padding: 0.8rem 4rem;
-    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, .3);
-    transition: .2s ease-out;
+    transition: .2s ease-in-out;
 }
 
 .quote-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.025);
     background-color: black;
     color: rgb(255, 255, 100);
 }
@@ -188,14 +187,6 @@ header {
 
 .portfolio {
     padding: 0 1rem;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-    /* max-width: 1140px; */
-    width: 100%;
-    margin: 0 auto;
 }
 
 .section-header {
@@ -231,7 +222,47 @@ header {
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* ---  Contact Section    --- */
+form label {
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+.form-control {
+    max-width: 880px;
+    width: 100%;
+    background-color: white;
+    color: #303137;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    padding: .375rem .75rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-clip: padding-box;
+    display: block;
+}
+
+.submit-btn-wrapper {
+    margin-top: 3rem;
+}
+
 /* ---  Mobile  --- */
+@media (max-width: 920px) {
+    
+    .form-group {
+        display: flex;
+    }
+
+    .submit-btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -283,6 +314,7 @@ header {
     .media-object {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .media-object.middle {
